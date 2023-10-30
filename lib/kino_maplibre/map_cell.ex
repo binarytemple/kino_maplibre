@@ -8,7 +8,7 @@ defmodule KinoMapLibre.MapCell do
   @as_int ["zoom", "layer_radius", "cluster_min", "cluster_max"]
   @as_atom ["layer_type", "source_type", "symbol_type"]
   @as_float ["layer_opacity"]
-  @geometries [Geo.Point, Geo.LineString, Geo.Polygon, Geo.GeometryCollection]
+  @geometries [Geo.Point, Geo.MultiPolygon, Geo.LineString, Geo.Polygon, Geo.GeometryCollection]
   @styles %{
     "street (non-commercial)" => :street,
     "terrain (non-commercial)" => :terrain,
